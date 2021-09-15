@@ -1,8 +1,12 @@
 .background-header {
-  padding: 30px 0;
-  margin: 0 0 5% 0;
-  box-shadow: rgb(0 0 0 / 7%) 0px 4px 6px;
+  padding: 23px 0;
+  box-shadow: rgb(0 0 0 / 5%) 0px 4px 6px;
+  z-index: 999;
+  margin: 0 0 10px 0;
+  top: 0;
   background-color: #fff;
+  position: sticky;
+  position: -webkit-sticky;
 }
 .container-header {
   display: flex;
@@ -18,7 +22,7 @@
 }
 
 .list-page {
-  flex: 2;
+  flex: 1.5;
   display: none;
 }
 .list-page ul{
@@ -27,6 +31,11 @@
 }
 .list-page li{
   list-style: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+.list-page li:hover{
+  color: #777;
 }
 
 .header-signup {
@@ -34,11 +43,28 @@
   display: flex;
   justify-content: flex-end;
 }
+.masuk {
+  display: none;
+}
+
+.hot {
+  position: absolute;
+  margin-top: -20px;
+  margin-left: 50px;
+  background-color: red;
+  padding: 2px 7px;
+  font-size: 10px;
+  border-radius: 10px;
+  color: #fff;
+}
 
 
 /* Responsive */
 @media only screen and (min-width: 800px) {
   .list-page {
+    display: block;
+  }
+  .masuk {
     display: block;
   }
 }
