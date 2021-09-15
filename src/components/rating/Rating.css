@@ -1,0 +1,12 @@
+.rating {
+  display: flex;
+  justify-content: space-between;
+  width: 110px;
+  margin: 0 !important;
+}
+.checked {
+  color: orange;
+}
+.not {
+  color: #999;
+}

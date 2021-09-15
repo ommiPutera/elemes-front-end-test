@@ -1,0 +1,28 @@
+.navigation-container {
+  padding: 10px 5%;
+  height: 60px;
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 0;
+  background-color: #fff;
+  display: flex;
+  border-top: 1px solid #eee;
+  justify-content: space-between;
+}
+.navigation-container div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.navigation-container p{
+  font-size: 14px;
+}
+
+/* Responsive */
+@media only screen and (min-width: 800px) {
+  .navigation-container {
+    display: none;
+  }
+}
